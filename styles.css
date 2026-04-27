@@ -1,0 +1,65 @@
+/*global property*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: grey;
+}
+
+h1, h2, h3, p{
+    color: whitesmoke;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+/*nav property*/
+
+nav{
+    position: fixed;
+    background-color: lightcyan;
+    opacity: 50%;
+}
+
+nav *{
+    display: inline;
+    color: black;
+}
+
+/*drop-down menu*/
+.content{
+    display: none;
+}
+
+.row{
+    display: none;
+}
+
+/*drop-down lvl 1*/
+nav .menu:hover .row{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+/*drop-down lvl 2*/
+nav .menu .row:hover .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+/*property présentation and skills*/
+
+#présentation, #tab{
+    flex-direction: column;
+}
+
+#tab embed{
+    height: 500px;
+}
