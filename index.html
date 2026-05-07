@@ -90,7 +90,8 @@
     <div id="projets">
         <h1 id="projets">projets</h1>
         <h2 id="hackaton">hackaton</h2>
-        <p>Dans ce projets, nous devions créer une entreprise fictive   </p>
+        <p>Dans ce projets, nous devions créer une entreprise fictive avec une équipe composé de 4 membre, un chef de projet, un gestionnaire d'infrastructure, un développeur, et d'un support.</p>
+        <p>Pour notre entreprise nous avons choisi de faire un casino.</p>
     </div>
 
     <div id="tab" class="container">
@@ -106,9 +107,10 @@
 
         <div id="C1">
             <h2>C1 - Recenser et identifier les ressources numériques</h2>
+            <p>Dans le cadre su hackathon, nous devions recenser toutes nos machines, nous avons docn pour cela utiliser GLPI</p>
             <p>GLPI est un outil qui permet de recenser et identifier des ressources d'un parque informatique</p>
             <p>Pour recenser, on va installer les agents GLPI sur les machines cibles puis les lier a notre GLPI hôte. Dans un premier temps, on télécharge l'agent sois directement sur <a href="https://github.com/glpi-project/glpi-agent/releases">github</a> sois avec wget https://github.com/glpi-project/glpi-agent/releases si on est sur linux</p>
-            <p>Après l'installation, on va l'installer avec sudo perl glpi-agent-1.17-linux-installer.pl et renseigner l'adresse ip de notre GLPI hôte quand l'url d'un serveur GLPI est demandé. Si tout s'est bien réalisé la machine apparaitra dans la liste des machines sur le GLPI hôte</p>
+            <p>Après le téléchargement, on va l'exécuter avec "sudo perl glpi-agent-1.17-linux-installer.pl" et renseigner l'adresse ip de notre GLPI hôte quand l'url d'un serveur GLPI est demandé. Si tout s'est bien réalisé la machine apparaitra dans la liste des machines sur le GLPI hôte</p>
             <embed src="img/glpi.pdf"/>
         </div>
 
@@ -143,6 +145,7 @@
             <p>Dans un premier temps, cela implique de recueillir les problèmes rencontrés par les utilisateurs comme par exemple un problème d’infrastructure Ces informations sont ensuite enregistrées sous formes de ticket dans GLPI, en précisant des éléments importants tels que les identités de l’utilisateur, la description du problème, la priorité et la catégorie.</p>
             <p>Ensuite, le suivi des demandes doit être assuré. Cette étape consiste à mettre à jour régulièrement les tickets en fonction de leur avancement Des commentaires peuvent être ajoutés afin de garder une trace des actions réalisées. Le suivi permet de vérifier que chaque demande est bien prise en charge et traitée dans des délais adaptés.</p>
             <p>Ainsi, la gestion des demandes via GLPI contribue à une meilleure organisation du support, tout en garantissant une communication claire avec les utilisateurs et une résolution plus rapide des incidents.</p>
+            <img src="img/tickets.png" alt="Capture d'écran de tickets GLPI">
         </div>
 
         <div id="C8">
@@ -163,10 +166,12 @@
 
         <div id="C11">
             <h2>C11 - Référencer les services en ligne de l’organisation et mesurer leur visibilité</h2>
+            <p>Nous avons utiliser google analytics pour mesurer la visibilité de notre cite durant le hackaton</p>
             <p>Google analytics est un outil qui permet de mesurer la visibilité d’un site web avec un suivi du nombre de visiteurs, et du pays de connexion.</p>
             <p>Pour le mettre en place on se connecte avec son compte google sur <a href="https://tagmanager.google.com">tag manager</a> et créer un compte. Ainsi, à l'issue de la création, on aura un code qu’il faudra simplement copier coller dans le head de notre page.</p>
+            <img src="img/google analytics 2.png" alt="Configuration de Google Analytics dans Tag Manager">
             <p>Après un certain laps de temps, les données sur google analytics seront mise à jour, pour nous permettre d'observer les passages sur notre site.</p>
-            <img src="img/google analytics.png">
+            <img src="img/google analytics.png" alt="Tableau de bord Google Analytics avec données de visiteurs">
         </div>
 
         <div id="C12">
@@ -186,7 +191,7 @@
             <p>Dans le cadre du Hackathon, nous avons utilisé l’outil de gestion de projet Trello afin d’organiser, suivre et structurer l’ensemble des tâches à réaliser.</p>
             <p>Trello est un outil qui permet de structurer un projet, grâce à une organisation logique des tâches à réaliser, un suivi de l’avancement de celle-ci en fonction des délais fixés.</p>
             <p>Ainsi, notre tableau était composé de 3 colonnes. Une pour les tâches à réaliser, une seconde pour celle en cours, et enfin une pour les tâches terminées. C'est ce qu'on appel un tableau KANBAN.</p>
-            <img src="img/trello.png" alt="image du trableau trello">
+            <img src="img/trello.png" alt="image du tableau trello">
         </div>
 
         <div id="C15">
@@ -207,7 +212,7 @@
 
             <h3>Apache</h3>
             <p>Apache est un programme qui permet la création d’un serveur web, en d’autres mots il permet d’afficher une page si on met l’adresse ip de notre machine en navigateur. Pour cela, dans le cas de linux on fait la commande “sudo apt install apache2” pour installer notre serveur web apache. Les fichiers de notre serveur se situent ensuite dans /var/www/html, c’est le DocumentRoot de notre serveur web.</p>
-            <img src="img/apachefolder.png">
+            <img src="img/apachefolder.png" alt="Structure des dossiers d'Apache">
 
             <h3>Azure</h3>
             <p>Grâce à l’offre Microsoft Azure for student nous avons 100 dollars de crédits offerts à la création de notre compte Microsoft Azure mais également d’avoir accès à des petites VM gratuites, nous avons simplement installer apache sur cette VM ainsi que d’y téléverser nos documents html, css, js et cette vm sera en continue ouverte, il suffira simplement d’aller sur l’adresse IP de la VM puis nous verrons notre site, c’est d’ailleurs grâce à ce service que nous avons hébergé notre GLPI en ligne.</p>
